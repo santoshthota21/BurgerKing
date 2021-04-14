@@ -1,0 +1,59 @@
+.ControllerRow, .TotalCost{
+    
+    background-color:  rgb(235, 145, 35);
+    margin: auto;
+    border: 5px solid rgb(235, 145, 35);
+    align-items: center; 
+    outline: none;
+    width: 99%;
+     
+    
+}
+
+.itemName{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 125px;
+    margin-right: 40px;
+}
+
+h6{
+    display: inline;
+    font-size: 20px; 
+}
+
+.LessBtn{
+
+    margin-right: 20px;
+    background-color: rgb(224, 148, 55);
+    color: #FFFF;
+    border: 0px;
+    outline: none;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    border: 1px solid rgb(196, 151, 40);
+}
+
+.MoreBtn{
+    background-color: rgb(124, 71, 5);
+    color: #FFFF;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+
+    border: 0px;
+    outline: none;
+
+}
+
+.OrderButton{
+    color:black;
+    background-color: rgb(250, 226, 9);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    outline: none;
+   
+}

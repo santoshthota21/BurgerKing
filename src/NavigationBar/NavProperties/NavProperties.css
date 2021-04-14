@@ -1,0 +1,92 @@
+
+
+
+@media (max-width:500px){
+    .NavProperties{
+        background-color: black;
+        color: black;
+        margin-top: 5px;
+        font-family: 'Satisfy', cursive;
+    }
+
+    .NavLinks{
+        align-content: center;
+        width: 100%;
+        
+        
+    }
+
+    .NavLinks ul{
+        text-align: center;
+        padding: 0px;
+        margin-top: 10px ;      
+    }
+
+    .NavLinks a{
+        color: white;
+        text-decoration: none;
+        /* border-bottom-width: 0px;
+        transition: linear 3s; */
+    }
+
+    .NavLinks a.active{
+        color: rgba(255, 115, 0, 0.76);
+        font-weight: bold;
+        border-bottom-width: 3px;
+    }
+
+    
+}
+
+@media (min-width:500px){
+
+    .NavProperties{
+        display: inline-block;
+        width: max-content;
+        margin-right: 5px;
+        font-family: 'Satisfy', cursive;
+    }
+    
+
+    .NavLinks{
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .NavLinks ul{
+        padding: 0px;
+    }
+    
+    .NavLinks a{
+
+        border-color:  rgb(177, 57, 10);
+        border-width: 0px;
+        border-style: solid;
+        margin: auto;
+        color: black;
+        text-decoration: none;
+        margin: 0px;
+        padding: 10px;
+    }
+
+
+   
+    .NavLinks a.active{
+        color: black;
+        font-weight: bold;
+        border-bottom-width: 3px;
+    }
+
+   
+   /* a:hover{
+        border-color: rgb(129, 45, 5);
+        cursor: pointer;
+        border-bottom-width: 8px;
+        font-weight: bold;
+       
+    }*/
+}

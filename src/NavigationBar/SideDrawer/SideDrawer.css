@@ -1,0 +1,38 @@
+.SideDrawer{
+
+    z-index: 500px;
+    width: 50%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    transition: 1s;
+
+}
+
+.SCloseBtn{
+       
+
+}
+
+
+#SCloseBtnId{
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-right: -25px;
+    background-color: rgb(221, 75, 17);
+    transition: 0.3s;
+}
+
+
+
+.SBurgerLogo{
+    padding-top:20px;
+    background-color: rgb(221, 75, 17);
+}

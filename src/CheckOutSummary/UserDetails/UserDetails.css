@@ -1,0 +1,60 @@
+.UserDetails{
+    margin-top: 20px;
+    display: flex;
+    width: 50%;
+   
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 5px #888888;
+    box-sizing: border-box;
+
+}
+form{
+    padding-bottom: 25px;
+}
+.FormHeading{
+    text-align: center;
+    font: bold;
+}
+
+.InputField{
+
+    display: block;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 150px;
+    border-style: solid;
+}
+
+.InputField:focus{
+    width: 70%;
+    z-index: 500px;
+    font-size: larger;
+    font-weight: bolder;
+    box-shadow:  5px 5px 5px 5px #888888;
+}
+
+.FormBtn{
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+
+
+@media (max-width:500px){
+
+        
+    .InputField:focus{
+        width: 100%;
+    }
+    .UserDetails{
+        width: 80%;
+    }
+}

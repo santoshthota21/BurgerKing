@@ -1,0 +1,54 @@
+.ToolBar{
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(252, 125, 6);
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+
+.ToolBarLogo{
+
+    height: 100%;
+    display: flex;
+    margin-left: 200px;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.ToolBarHeading{
+    font-family: 'Satisfy', cursive;
+
+}
+
+.BLogo{
+
+    width: 50px;
+    height: 50px;
+    
+}
+
+@media (max-width:500px){
+    .HambergLogo div{
+        background-color: black;
+        width: 35px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    .ToolBarLogo{
+
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: auto;
+    }
+    
+}

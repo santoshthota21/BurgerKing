@@ -1,13 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
+import Layout from './hoc/Layout'
 import * as serviceWorker from './serviceWorker';
 
+import reducer from './reducer/reducer';
+import orderReducer from './reducer/OrderReducer';
+import authReducer from './reducer/AuthReducer';
+import {Provider} from 'react-redux';
+import {createStore,applyMiddleware, compose,combineReducers} from 'redux';
+import thunk from 'redux-thunk';
+
+//const store = createStore(reducer);
+
+
+const logger= state=>{
+  return next =>{
+    return action=>{
+      console.log("from middle ware",action);
+      const result=next(action);
+      console.log(result);
+      return result;
+    }
+  }
+}
+
+const rootReducer = combineReducers({
+  saveOrder: reducer,
+  getOrder :orderReducer,
+  auth : authReducer
+})
+
+const composeEnhancer=window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store=createStore(rootReducer,composeEnhancer(applyMiddleware(thunk)));
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <Layout />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
